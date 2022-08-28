@@ -25,12 +25,24 @@
     </nav>
     <main>
       <p>JavaScript is one of the world's most popular programming languages. Today, we'll be learning how to do some JavaScript!</p>
-      <h1>Make a Button</h1>
+      <h2>1. Make a Button</h2>
       <p>This is one of the simplest (and most boring) tasks you <b>have</b> to accomplish.</p>
-      <button onclick="alert('You clicked me!')">Click me!</button><br>
+      <p><button onclick="alert('You clicked me!')">Click me!</button></p>
       <p>And here's all of the code you'll have to write.</p>
       <pre>
 &lt;button onclick="alert('You clicked me!')"&gt;Click me!&lt;/button&gt;
+      </pre>
+      <h2>2. JavaScript Functions</h2>
+      <p>At least your HTML can be a bit tidier, and it helps with larger programs.</p>
+      <p><button onclick="alert('You clicked me!')">Click me!</button></p>
+      <pre>
+&lt;button onclick="myFunction()"&gt;Click me!&lt;/button&gt;
+...
+&lt;script&gt;
+  function myFunction() {
+    alert("You clicked me!")
+  }
+&lt;/script&gt;
       </pre>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
