@@ -65,8 +65,10 @@ var answer = "An egg."
       function toggleDarkMode() {
         if (darkMode) {
           navbar.className = "navbar navbar-expand-lg bg-light sticky-top"
+          document.body.className = ""
         } else {
           navbar.className = "navbar navbar-expand-lg bg-dark sticky-top"
+          document.body.className = "bg-dark text-light"
         }
         darkMode = !darkMode
       }
