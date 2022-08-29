@@ -25,8 +25,16 @@
       </div>
     </nav>
     <main>
+      <h1>JavaScript</h1>
       <p>JavaScript is one of the world's most popular programming languages. Today, we'll be learning how to do some JavaScript!</p>
-      <h2>1. Make a Button</h2>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#section-1921">Section 1</a></li>
+        <li><a href="#section-2813">Section 2</a></li>
+        <li><a href="#section-2481">Section 3</a></li>
+        <li><a href="#section-4810">Section 4 (<b>Warning:</b> This is a long section.)</a></li>
+      </ul>
+      <h2 id="section-1921">1. Make a Button</h2>
       <p>This is one of the simplest (and most boring) tasks you <b>have</b> to accomplish.</p>
       <p><button onclick="alert('You clicked me!')">Click me!</button></p>
       <p>And here's all of the code you'll have to write.</p>
@@ -34,7 +42,7 @@
 &lt;button onclick="alert('You clicked me!')"&gt;Click me!&lt;/button&gt;
       </pre>
       <p><b>Note:</b> Please don't click the Supress Dialogs button. A lot of things on this site relies on dialogs. So please don't click on the Supress Dialogs button.</p>
-      <h2>2. JavaScript Functions</h2>
+      <h2 id="section-2813">2. JavaScript Functions</h2>
       <p>At least your HTML can be a bit tidier, and it helps with larger programs.</p>
       <p><button onclick="alert('You clicked me!')">Click me!</button></p>
       <pre>
@@ -46,7 +54,7 @@
   }
 &lt;/script&gt;
       </pre>
-      <h2>3. Variables</h2>
+      <h2 id="section-2481">3. Variables</h2>
       <p>Variables store values, such as <code>"Hello, world!"</code>, <code>"You clicked me!"</code>, and <code>"Oh, no!"</code>.</p>
       <p>To create a variable in JavaScript, you just use <code>var</code>, followed by the variable name, <i>followed by</i> the equals sign (which is the <code>=</code> sign in case you didn't know), and <i>finally followed by</i> the value. Confused? Don't worry! It's simply <code>var name = value</code>.</p>
       <p>Try creating your own variable name and value below!</p>
@@ -56,7 +64,8 @@ var <input type="text" value="name" spellcheck="false"> = "<input type="text" va
 var joke = "What thing cracks up the easiest?"
 var answer = "An egg."
       </pre>
-      <h2>4. DOM (Document Object Model)</h2>
+      <h2 id="section-4810">4. DOM (Document Object Model)</h2>
+      <p><b>Warning:</b> This section is kind of long.</p>
       <p>But before we use variables, let's take a look at the DOM (Document Object Model). This is a tree containing all of the elements in an HTML document, and the document itself.</p>
       <pre>
 <u>TREE</u>
@@ -113,7 +122,7 @@ H1 id="my-heading"
       <p>If we want the body of the document, you can just use <code>document.body</code>.</p>
       <p>Note that we haven't done any visualizations yet. Let's do them now!</p>
       <h3 id="visual-1931">Visual 1</h3>
-      <div class="card">
+      <div class="card m-3">
         <div class="card-body">
           <div class="m-1 p-1 border border-primary">
             <p class="lead">Body</p>
@@ -125,7 +134,7 @@ H1 id="my-heading"
         </div>
       </div>
       <h3 id="visual-2914">Visual 2</h3>
-      <div class="card">
+      <div class="card m-3">
         <div class="card-body">
           <div class="m-1 p-1 border border-primary">
             <p class="lead">Body</p>
@@ -137,7 +146,7 @@ H1 id="my-heading"
         </div>
       </div>
       <h3 id="visual-1021">Visual 3</h3>
-      <div class="card">
+      <div class="card m-3">
         <div class="card-body">
           <div class="m-1 p-1 border border-sucess">
             <p class="lead">Heading with attributes (<code>id="my-heading"</code>)</p>
