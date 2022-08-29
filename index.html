@@ -80,6 +80,34 @@ HTML
   &lt;/body&gt;
 &lt;/html&gt;
       </pre>
+      <p>If we gave the <code>h1</code> element an identifier (using the <code>id</code> attribute), the tree and actual document would look like this:</p>
+      <pre>
+<u>EXAMPLE DOM OF A SIMPLE HTML DOCUMENT</u>
+
+HTML
+|- HEAD
+|  |- TITLE
+|  |  |- "Hello, world!"
+|- BODY
+|  |- H1 id="my-heading"
+|  |  |- "Hello, world!"
+
+<u>ACTUAL DOCUMENT</u>
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id="my-heading"&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+      <p>We then could use <code>document.getElementById("my-heading")</code> to get the element. It's tree will look like this:</p>
+      <pre>
+H1 id="my-heading"
+|- "Hello, world!"
+      </pre>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
