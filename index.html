@@ -134,12 +134,15 @@ H1 id="my-heading"
       </pre>
       <p>Now, since this was a very long lesson, let's end it with a prank.</p>
       <p>And this prank uses the <code>document.write</code> function. Historically, the only way to add HTML to a page was to use the <code>document.write</code> function. Because of that, the HTML parser has to stop <i>just in case</i> the JavaScript interpreter hit this function. When it did, the HTML parser just added some HTML to the bottom of the page. And because you can execute this function at any time, some people decided that if this function was called after the page finished loading, with a <i>BOOM!</i> all of your work will be gone. Except for the message in the function. So now comes the prank:</p>
-      <p><button onclick="document.write('Don\'t say you weren't warned.')">DO NOT PRESS</button></p>
+      <p><button onclick="doNotPressButton()">DO NOT PRESS</button></p>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
       function changeHTML2391() {
         document.getElementById("change-html-2391").innerHTML = "And now you changed the HTML of this paragraph."
+      }
+      function doNotPressButton() {
+        document.write("Don't say you weren't warned.")
       }
     </script>
   </body>
