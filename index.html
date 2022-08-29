@@ -66,9 +66,11 @@ var answer = "An egg."
         if (darkMode) {
           navbar.className = "navbar navbar-expand-lg bg-light sticky-top"
           document.body.className = ""
+          document.body.style = ""
         } else {
-          navbar.className = "navbar navbar-expand-lg bg-dark sticky-top"
+          navbar.className = "navbar navbar-expand-lg bg-dark sticky-top text-light"
           document.body.className = "bg-dark text-light"
+          document.body.style = "--bs-bg-opacity: 0.5"
         }
         darkMode = !darkMode
       }
