@@ -163,6 +163,25 @@ H1 id="my-heading"
   &lt;/body&gt;
 &lt;/html&gt;
       </pre>
+      <p>Using this template, create two files: <code>index.html</code> and <code>submit.html</code>.</p>
+      <h3>2. Create the form</h3>
+      <p>In the <code>index.html</code> file, add this code below the <code>script</code> element:</p>
+      <pre>
+&lt;form action=&quot;submit.html&quot;&gt;
+  &lt;p&gt;Enter your first name (given name): &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/p&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Receive your greeting&quot;&gt;
+&lt;/form&gt;
+      </pre>
+      <h3>3. Create the submit page</h3>
+      <p>In the <code>submit.html</code> file, below the Bootstrap scripts and the Greeting API, add this line of JavaScript:</p>
+      <pre>
+document.getElementById("greeting").innerHTML = "Hello, " + getNameFromSearch(location.search) + "!"
+      </pre>
+      <p>And also add this HTML:</p>
+      <pre>
+&lt;p id="greeting"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./"&gt;Start over&lt;/a&gt;&lt;/p&gt;
+      </pre>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
